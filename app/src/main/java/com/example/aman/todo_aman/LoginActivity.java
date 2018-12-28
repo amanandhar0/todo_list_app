@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = uname.getText().toString();
         String password = pass.getText().toString();
 
-        if (username.equals("amdin") && password.equals("admin")) {
+        if (username.equals("admin") && password.equals("admin")) {
 
             Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
             startActivity(intent);
