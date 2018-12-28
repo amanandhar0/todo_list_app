@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aman.todo_aman.LoginActivity"
-    android:background="#f1f1f1">
+    tools:context="com.example.aman.todo_aman.AdminActivity">
 
     <ImageView
 
@@ -25,6 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="                               UserName"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LogoView" />
@@ -34,25 +34,23 @@
         android:id="@+id/password_editext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:hint="                               Password"
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/username_editext"/>
+        app:layout_constraintTop_toBottomOf="@id/username_editext" />
 
 
-
-
-
-    <Button android:id="@+id/login_btn"
-
+    <Button
+        android:id="@+id/login_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Login"
         android:onClick="openActivity"
+        android:text="Change Password"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_editext"/>
-    <!--android:onClick="openActivity"-->
+        app:layout_constraintTop_toBottomOf="@id/password_editext" />
 
 </android.support.constraint.ConstraintLayout>
