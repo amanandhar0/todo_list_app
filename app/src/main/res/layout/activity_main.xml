@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b1b1b1"
     tools:context="com.example.aman.todo_aman.MainActivity">
 
     <TextView
