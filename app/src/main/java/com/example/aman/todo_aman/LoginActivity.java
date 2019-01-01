@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         else if(!username.isEmpty()&& !password.isEmpty() && username.equals(sharedPreference.getUsername()) && password.equals(sharedPreference.getPassword())){
             Intent intent=new Intent(this,DashboardActivity.class);
-            Toast.makeText(this,"Welcome "+ username, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Welcome "+ username, Toast.LENGTH_SHORT).show(); 
             startActivity(intent);
             finish();
         }
