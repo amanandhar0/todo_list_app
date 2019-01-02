@@ -12,7 +12,7 @@
         android:id="@+id/LogoView"
         android:layout_width="283dp"
         android:layout_height="119dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:gravity="center"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,9 +22,12 @@
 
     <EditText
         android:id="@+id/username_editext"
-        android:layout_width="0dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:hint="                               UserName"
+        android:layout_marginTop="68dp"
+        android:drawableLeft="@drawable/ic_action_name_user"
+        android:hint="UserName"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LogoView" />
@@ -32,26 +35,44 @@
 
     <EditText
         android:id="@+id/password_editext"
-        android:layout_width="0dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Password"
+
         android:inputType="textPassword"
-        android:hint="                               Password"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/username_editext"/>
+        app:layout_constraintTop_toBottomOf="@id/username_editext" />
 
 
+    <Button
+        android:id="@+id/login_btn"
 
-
-
-    <Button android:id="@+id/login_btn"
-
-        android:layout_width="0dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="Login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_editext"/>
+        app:layout_constraintTop_toBottomOf="@id/password_editext" />
     <!--android:onClick="openActivity"-->
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="create_ac"
+        android:text="Create an Account! Click Here"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn" />
+
+
+    <!--this is not necessary-->
 
 </android.support.constraint.ConstraintLayout>

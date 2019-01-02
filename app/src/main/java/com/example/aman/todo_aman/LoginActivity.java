@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText loginPassword;
     private Button loginBttn;
 
-    private static String usernameCredential = "admin";
-    private static String passwordCredential = "admin";
+    private static String usernameCredentialAdmin = "admin";
+    private static String passwordCredentialAdmin = "admin";
 
     SharedPreference sharedPreference;
     @Override
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginBttn=findViewById(R.id.login_btn);
         loginBttn.setOnClickListener(this);
 
-        sharedPreference=new SharedPreference(this);
+        sharedPreference=new SharedPreference(this);//shared pref.java ma lanako lagi
     }
 
     @Override
@@ -47,20 +47,30 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         username=loginUsername.getText().toString();
         password=loginPassword.getText().toString();
 
-        if(username.equals(usernameCredential)&& password.equals(passwordCredential)){
+        if(username.equals(usernameCredentialAdmin)&& password.equals(passwordCredentialAdmin)){
             Intent intent=new Intent(this,UserDetailActivity.class);
+            Toast.makeText(this,"Logged in as Admin", Toast.LENGTH_SHORT).show();
             startActivity(intent);
 
         }
         else if(!username.isEmpty()&& !password.isEmpty() && username.equals(sharedPreference.getUsername()) && password.equals(sharedPreference.getPassword())){
-            Intent intent=new Intent(this,DashboardActivity.class);
+            Intent intent=new Intent(this,MainActivity.class);
             Toast.makeText(this,"Welcome "+ username, Toast.LENGTH_SHORT).show();
             startActivity(intent);
             finish();
         }
         else
-            Toast.makeText(this,"Invalid Entry", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Invalid Details", Toast.LENGTH_SHORT).show();
     }
+
+
+
+    //////////////Thiss is not necessary only experimental
+    public void create_ac(View v){
+        Intent intent=new Intent(this,CreateAcActivity.class);
+        startActivity(intent);
+    }
+    /////////////Not necessary
 //    public void openActivity(View view){
 //        @SuppressLint("WrongConstant") SharedPreferences pref= getSharedPreferences("usname",MODE_PRIVATE);
 //        EditText uname= findViewById(R.id.username_editext);

@@ -49,7 +49,7 @@ public class UserDetailActivity extends AppCompatActivity implements View.OnClic
                 username=uET.getText().toString();
                 pass=pET.getText().toString();
 
-                sharedPreference.sUsname(username);
+                sharedPreference.sUsname(username);//esbata SharedPreference ko method ma pass vairacha
                 sharedPreference.sPass(pass);
 
                 Toast.makeText(this,"Username and Password updated successfully!!", Toast.LENGTH_SHORT).show();

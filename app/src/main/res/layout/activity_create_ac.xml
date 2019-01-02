@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aman.todo_aman.CreateAcActivity"
+    android:background="#b2b2bb">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:hint="Email"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/username"
+        android:drawableLeft="@drawable/ic_action_name_user"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        />
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        />
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:id="@+id/phone"
+        android:hint="Phone no."
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+
+        />
+
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_address"
+        android:id="@+id/address"
+        android:hint="Address"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+
+</android.support.constraint.ConstraintLayout>
