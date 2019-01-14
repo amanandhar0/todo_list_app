@@ -2,11 +2,18 @@ package com.example.aman.todo_aman;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
+import com.example.aman.todo_aman.Dialog.AddFacelessDialog;
 import com.example.aman.todo_aman.domain.faceless;
 
 import java.util.ArrayList;
@@ -16,11 +23,33 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayoutManager LinearLayoutManager;
     private RecyclerviewAdapter recyclerviewAdapter;
     private ArrayList<faceless> facelessArrayList=new ArrayList<>();
+    private View view;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.add_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id= item.getItemId();
+        switch(id){
+            case R.id.add_icon:
+                view.setVisibility(View.VISIBLE);
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,new AddFacelessDialog()).commit();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView=findViewById(R.id.recyclerview);
+        view=findViewById(R.id.main_view);
 
         LinearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         facelessArrayList=setData();
@@ -32,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public void setVisibility(){
+        view.setVisibility(View.GONE);
+    }
+
     private ArrayList<faceless>setData(){
         ArrayList<faceless>facelesses=new ArrayList<>();
         facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
@@ -61,4 +94,5 @@ public class MainActivity extends AppCompatActivity {
         facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
         return facelesses;
     }
+
 }

@@ -10,7 +10,7 @@
     <ImageView
 
         android:id="@+id/LogoView"
-        android:layout_width="283dp"
+        android:layout_width="match_parent"
         android:layout_height="119dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
@@ -31,18 +31,17 @@
         app:layout_constraintTop_toBottomOf="@id/LogoView"
         >
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Username"
-        android:drawableLeft="@drawable/ic_action_name_user"
-         />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:drawableLeft="@drawable/ic_action_name_user"
+            />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="UserName"
         android:layout_marginTop="12dp"
         android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"

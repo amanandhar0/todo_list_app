@@ -1,5 +1,6 @@
 package com.example.aman.todo_aman;
 
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class UserDetailActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText uET,pET;
+    TextInputLayout uET,pET;
     Button sBT,eBT;
     SharedPreference sharedPreference;
     @Override
@@ -19,9 +20,9 @@ public class UserDetailActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_detail);
         uET=findViewById(R.id.username);
-        String user=uET.getText().toString();
+        String user=uET.getEditText().getText().toString();
         pET=findViewById(R.id.password);
-        String pass=uET.getText().toString();
+        String pass=uET.getEditText().getText().toString();
 
         sBT=findViewById(R.id.save);
         eBT=findViewById(R.id.edit);
@@ -33,8 +34,8 @@ public class UserDetailActivity extends AppCompatActivity implements View.OnClic
         pET.setEnabled(false);
         sharedPreference=new SharedPreference(this);
 
-        uET.setText(sharedPreference.getUsername());
-        pET.setText(sharedPreference.getPassword());
+        uET.getEditText().setText(sharedPreference.getUsername());
+        pET.getEditText().setText(sharedPreference.getPassword());
 
     }
 
@@ -46,8 +47,8 @@ public class UserDetailActivity extends AppCompatActivity implements View.OnClic
 
         switch(id){
             case R.id.save:
-                username=uET.getText().toString();
-                pass=pET.getText().toString();
+                username=uET.getEditText().getText().toString();
+                pass=pET.getEditText().getText().toString();
 
                 sharedPreference.sUsname(username);//esbata SharedPreference ko method ma pass vairacha
                 sharedPreference.sPass(pass);

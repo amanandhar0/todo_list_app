@@ -12,4 +12,22 @@
                 android:layout_height="match_parent"
                 android:id="@+id/recyclerview"
             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:background="#cc444444"
+
+                android:visibility="gone"
+                android:id="@+id/main_view"
+                android:clickable="true"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/fragment_container">
+
+        </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>

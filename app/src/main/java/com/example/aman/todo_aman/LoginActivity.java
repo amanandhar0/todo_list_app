@@ -16,10 +16,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.support.design.widget.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private EditText loginUsername;
-    private EditText loginPassword;
+    private TextInputLayout loginUsername;
+    private TextInputLayout loginPassword;
     private Button loginBttn;
 
     private static String usernameCredentialAdmin = "admin";
@@ -44,8 +45,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         String username;
         String password;
 
-        username=loginUsername.getText().toString();
-        password=loginPassword.getText().toString();
+        username=loginUsername.getEditText().getText().toString();
+        password=loginPassword.getEditText().getText().toString();
 
         if(username.equals(usernameCredentialAdmin)&& password.equals(passwordCredentialAdmin)){
             Intent intent=new Intent(this,UserDetailActivity.class);
