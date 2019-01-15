@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:theme="@style/menubar">
+            android:theme="@style/main">
 
         </activity>
         <activity
@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/menubar" />
+            android:theme="@style/fulScn" />
         <activity
             android:name=".AdminActivity"
             android:theme="@style/menubar" />

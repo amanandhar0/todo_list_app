@@ -36,3 +36,4 @@ public class AdminActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+//Aba yo file chaiyena

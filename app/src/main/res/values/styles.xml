@@ -9,5 +9,8 @@
     </style>
     <style name="menubar" parent="Theme.AppCompat.Light.DarkActionBar"></style>
     <style name="fulScn" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="main" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="background">@color/gold</item>
+    </style>
 
 </resources>
