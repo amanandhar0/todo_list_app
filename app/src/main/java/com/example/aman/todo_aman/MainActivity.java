@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView=findViewById(R.id.recyclerview);
+        recyclerView=findViewById(R.id.recyclerview);//effects whole screen
         view=findViewById(R.id.main_view);
 
         LinearLayoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
@@ -67,31 +67,95 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<faceless>setData(){
         ArrayList<faceless>facelesses=new ArrayList<>();
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
-        facelesses.add(new faceless("dancing","PRactise for farewell program","10:10"));
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
+
+        facelesses.add(new faceless("dancing","This is the memo ma" +
+                "This is the memo made by facelsesde by facelses, This is the memo made by facelses" +
+                ",This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelsesThis is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelsesThis is the memo made by facelses," +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses" +
+                "This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses,This is the memo made by facelses","10:10"));
         return facelesses;
     }
 

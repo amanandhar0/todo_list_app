@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:theme="@style/main">
-
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/main"></activity>
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/fulScn" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/fulScn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -30,7 +29,8 @@
             android:theme="@style/menubar" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".UserDetailActivity" />
-        <activity android:name=".CreateAcActivity"></activity>
+        <activity android:name=".CreateAcActivity" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

@@ -5,11 +5,13 @@ package com.example.aman.todo_aman;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.aman.todo_aman.domain.faceless;
 
@@ -33,12 +35,29 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerviewViewHolder recyclerviewViewHolder, int i) {
+    public void onBindViewHolder(@NonNull final RecyclerviewViewHolder recyclerviewViewHolder, int i) {
 
         recyclerviewViewHolder.headingTextView.setText(facelessArrayList.get(i).getHeading());
         recyclerviewViewHolder.detailTextView.setText(facelessArrayList.get(i).getDetail());
         recyclerviewViewHolder.timeTextView.setText(facelessArrayList.get(i).getTime());
+        recyclerviewViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+//                Toast.makeText(context, "This is recycler toasts", Toast.LENGTH_SHORT).show();
+
+                String heading=recyclerviewViewHolder.headingTextView.getText().toString();
+                String detail=recyclerviewViewHolder.detailTextView.getText().toString();
+                String time=recyclerviewViewHolder.timeTextView.getText().toString();
+
+                Intent i =new Intent(context,DetailActivity.class);
+                i.putExtra("heading",heading);
+                i.putExtra("detail",detail);
+                i.putExtra("time",time);
+                context.startActivity(i);
+
+            }
+        });
     }
 
     @Override
